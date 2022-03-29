@@ -61,3 +61,13 @@ export const GETPROJECTS = gql`
     }
   }
 `
+export const GETTOKENS = gql`
+{
+  cryptos(orderBy: id_ASC) {
+    name
+    image {
+      url
+    }
+  }
+}
+`

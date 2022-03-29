@@ -1,16 +1,18 @@
 import React from "react";
 import Link from "next/link";
+import PrimaryButton from "./PrimaryButton";
+import { useRouter } from "next/router";
 function HomeBlogPreview({ data }) {
-  
+  const router = useRouter()
   return (
     <section className="py-6">
       <div className="container md:w-2/3 mx-auto p-2">
-        <div className="text-4xl font-semibold mb-6">Featured Blog</div>
+        <div className="text-4xl font-semibold mb-6">Latest Blog</div>
         <div className="container ">
           <a
             href={data?.url}
             target={"_blank"}
-            rel="noreferrer"  
+            rel="noreferrer"
             className="cursor-pointer "
           >
             <Link href={`/blog/${data?.slug}`} passHref>
@@ -22,16 +24,16 @@ function HomeBlogPreview({ data }) {
                       backgroundImage: `url(${data?.coverImage?.url})`,
                     }}
                   ></div>
-                  <div className="mt-2 text-3xl font-semibold">{data?.name}</div>
+                  <div className="mt-2 text-3xl font-semibold">
+                    {data?.name}
+                  </div>
                 </div>
               </article>
             </Link>
           </a>
         </div>
-        <div className="py-8">
-          <span className="bg-gray-900 dark:bg-slate-50 dark:text-slate-800 text-xl text-white px-8 py-4 rounded-full hover:ring-4 ring-gray-800  ring-offset-4 transition duration-500">
-            <Link href={"/blogs"}>Read all blog</Link>
-          </span>
+        <div className="py-2">
+          <PrimaryButton label={"Read all Blogs"} trigger={()=> router.push("/blogs")} />
         </div>
       </div>
     </section>
