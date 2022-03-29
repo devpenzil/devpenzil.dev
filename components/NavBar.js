@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 import Link from "next/link";
 import Image from "next/image";
 function NavBar() {
@@ -20,6 +20,7 @@ function NavBar() {
       prevScrollpos = currentScrollPos;
     };
   }, [dark]);
+
 
   return (
     <div className=" z-50 w-full fixed transition" id="navbar">

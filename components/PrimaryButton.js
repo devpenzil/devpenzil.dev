@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function PrimaryButton({label, trigger}) {
     return (
@@ -6,4 +6,4 @@ function PrimaryButton({label, trigger}) {
     )
 }
 
-export default PrimaryButton
+export default PrimaryButton;

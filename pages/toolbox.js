@@ -13,7 +13,6 @@ export async function getStaticProps() {
   };
 }
 function Toolbox({ tools }) {
-  // console.log(tools);
   return (
     <>
       <HeadSection title="Devpenzil | Toolbox" />

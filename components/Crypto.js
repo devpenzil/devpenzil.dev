@@ -3,7 +3,6 @@ import Image from "next/image";
 import CopyIcon from "../assets/svg/CopyIcon";
 import RightArrow from "../assets/svg/RightArrow";
 function Crypto({data}) {
-  console.log(data);
   return (
     <div
       className="container md:w-2/3 mx-auto py-6 px-6 bg-slate-100 dark:bg-slate-900 dark:text-slate-50 rounded-3xl"
