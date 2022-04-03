@@ -1,7 +1,16 @@
 import React from "react";
 import HeadSection from "../components/HeadSection";
-
-function stats() {
+import { GETSITEVIEWS } from "../queries/queries";
+import { graphcms } from "../graphcms/config";
+export async function getStaticProps() {
+  const { stat } = await graphcms.request(GETSITEVIEWS);
+  return {
+    props: {
+      stat,
+    },
+  };
+}
+function stats({ stat }) {
   return (
     <>
       <HeadSection title="Devpenzil | Stats" />
@@ -18,7 +27,7 @@ function stats() {
           </div>
           <div className="mt-5 flex space-x-4">
             <div className="w-full h-40 rounded-xl bg-slate-100 dark:bg-slate-900 dark:text-slate-50 flex flex-col justify-center items-center">
-              <div className="text-2xl font-bold">2121</div>
+              <div className="text-2xl font-bold">{stat.pagevisit}</div>
               <div className="font-semibold">Page views</div>
             </div>
             <div className="w-full h-40 rounded-xl bg-slate-100 dark:bg-slate-900 dark:text-slate-50 flex flex-col justify-center items-center">

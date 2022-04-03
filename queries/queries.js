@@ -71,3 +71,11 @@ export const GETTOKENS = gql`
   }
 }
 `
+
+export const GETSITEVIEWS = gql`
+{
+  stat(where: {id: "cl1ixdrp31f2d0cphdjl2mrfj"}) {
+    pagevisit
+  }
+}
+`
