@@ -20,7 +20,7 @@ function Projects({ projects }) {
       <section className="mx-auto container md:w-2/3 w-full p-2">
         <div className="text-4xl font-semibold">Projects</div>
         <div className="w-full flex flex-row mt-5 space-x-4">
-          <div className="w-1/2">
+          <div className="md:w-1/2 w-full">
             {projects.map((obj, index) => {
               return (
                 <a
@@ -29,6 +29,9 @@ function Projects({ projects }) {
                   target="_blank"
                   onMouseOver={() => {
                     SetImage(obj.coverimage.url);
+                  }}
+                  onMouseLeave={() => {
+                    SetImage("https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
                   }}
                 >
                   <div className="w-full bg-slate-100 py-6 px-4 rounded-md mt-5 cursor-pointer hover:ring-1 ring-slate-600 dark:bg-slate-900">

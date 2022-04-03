@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import CopyIcon from "../assets/svg/CopyIcon";
 import RightArrow from "../assets/svg/RightArrow";
 function Crypto({data}) {
   return (
-    <div
+    <div data-scroll-container
       className="container md:w-2/3 mx-auto py-6 px-6 bg-slate-100 dark:bg-slate-900 dark:text-slate-50 rounded-3xl"
       title="My crypto assets"
     >
@@ -48,7 +48,7 @@ function Crypto({data}) {
         </div>
       </div>
       <div className="text-2xl font-bold hover:text-slate-500 mt-10 ">
-        <a href="https://opensea.io/collection/untitled-collection-276211236" className="flex items-center">
+        <a href="https://opensea.io/collection/devpenzil-collection" className="flex items-center">
           Checkout my NFT collection <RightArrow />
         </a>
       </div>
