@@ -5,6 +5,7 @@ import HomeBlogPreview from "../components/HomeBlogPreview";
 import { THREEBLOGDETAILS } from "../queries/queries";
 import CodingSetup from '../components/CodingSetup'
 import { graphcms } from "../graphcms/config";
+import { motion } from "framer-motion";
 
 export async function getStaticProps() {
   const { blogs } = await graphcms.request(THREEBLOGDETAILS);
@@ -32,7 +33,9 @@ function Index({blogs}) {
   return (
     <div className="dark:bg-slate-800 dark:text-slate-50">
       <HeadSection title='Devpenzil | Home' />
+      <motion.div>
       <HeroSpotlight />
+      </motion.div>
       <HomeBlogPreview data={blogs[0]} />
       <CodingSetup />
     </div>
