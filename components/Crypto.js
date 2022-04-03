@@ -10,7 +10,7 @@ function Crypto({data}) {
     >
       <div className="mx-auto w-full flex items-center justify-center flex-col mt-8 ">
         <Image
-          src="/67946056.jpeg"
+          src="/67946056.png"
           alt="image"
           width={100}
           height={100}

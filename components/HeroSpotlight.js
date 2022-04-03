@@ -10,8 +10,7 @@ function HeroSpotlight() {
         I&#39;m <span className='text-pink-400'>Ajo Alex</span>. I&#39;m a Front End Developer, working at{" "}
         <a href="https://www.neoito.com/" target={"_blank"} rel="noreferrer" className="text-gray-500 underline  hover:text-gray-900 transition duration-300">
           Neoito
-        </a>{" "}
-        as Associate Software Engineer
+        </a>{" "}.
         <div className="text-xl md:space-x-6 mt-6 flex flex-col md:flex-row">
           <span className="bg-gray-900 text-white px-8 py-4 w-full md:w-auto mt-2 rounded-full hover:ring-4 ring-gray-800 ring-offset-4 transition duration-500">
             <Link href={"/blogs"}>Read the blog</Link>
@@ -21,9 +20,6 @@ function HeroSpotlight() {
           </span>
         </div>
       </div>
-      {/* <div className="text-3xl mt-4 ">
-        <Image src="/67946056.jpeg" alt="image" width={200} height={200} className="rounded-full" />
-      </div> */}
     </div>
   </section>
   )

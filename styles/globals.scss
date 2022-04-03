@@ -38,7 +38,7 @@
     margin: 1em 0;
     @apply p-2 bg-slate-200;
   }
-  ul{
+  ul {
     display: block;
     list-style-type: disc;
     margin-top: 1em;
@@ -47,7 +47,11 @@
     margin-right: 0;
     padding-left: 40px;
   }
-  li{
+  li {
     display: list-item;
   }
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }

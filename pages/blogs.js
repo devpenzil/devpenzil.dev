@@ -15,7 +15,7 @@ function Blogs({blogs}) {
   return (
     <div className="dark:bg-slate-800 dark:text-slate-50">
        <HeadSection title='Devpenzil | Blogs' />
-        <div className="dark:bg-slate-800 dark:text-slate-50 w-full min-h-screen">
+        <div className="dark:bg-slate-800 dark:text-slate-50 w-full">
           <div className="container md:w-2/3 mx-auto p-2">
             <div className="text-4xl font-semibold">
               Blogs
