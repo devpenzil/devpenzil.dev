@@ -51,7 +51,7 @@ function NavBar() {
         </div>
       </div>
       {mmenuOpen && (
-        <div className="fixed w-full h-screen bg-white dark:bg-slate-800 ">
+        <div className="fixed w-full h-screen bg-white dark:bg-slate-800">
           <div className="w-full h-screen flex flex-col space-y-3 items-center px-6">
             <span>
               <Link href="/">Home</Link>
