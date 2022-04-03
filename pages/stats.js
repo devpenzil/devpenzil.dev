@@ -28,11 +28,13 @@ function stats({ stat }) {
           <div className="mt-5 flex space-x-4">
             <div className="w-full h-40 rounded-xl bg-slate-100 dark:bg-slate-900 dark:text-slate-50 flex flex-col justify-center items-center">
               <div className="text-2xl font-bold">{stat.pagevisit}</div>
-              <div className="font-semibold">Page views</div>
+              <div className="font-semibold text-center">Page views</div>
             </div>
             <div className="w-full h-40 rounded-xl bg-slate-100 dark:bg-slate-900 dark:text-slate-50 flex flex-col justify-center items-center">
               <div className="text-2xl font-bold">12</div>
-              <div className="font-semibold">News letter subscription</div>
+              <div className="font-semibold text-center">
+                News letter subscription
+              </div>
             </div>
           </div>
         </div>
