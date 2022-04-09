@@ -5,7 +5,7 @@ function HeadSection(props) {
     <div>
       <Head>
         <title>{props.title}</title>
-        <link rel="shortcut icon" href="myfav.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
         <meta name="title" content="Devpenzil Website" />
         <meta
@@ -21,30 +21,28 @@ function HeadSection(props) {
         <meta name="language" content="English" />
         <meta name="author" content="Ajo Alex" />
 
-        
-          <meta
-            name="description"
-            content="Personal Website of Ajoalex aka Devpenzil"
-          />
-          {/* Open Graph / Facebook */}
-          <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://devpenzil.dev/" />
-          <meta property="og:title" content="Devpenzil | Home" />
-          <meta
-            property="og:description"
-            content="Personal Website of Ajoalex aka Devpenzil"
-          />
-          <meta property="og:image" content />
-          {/* Twitter */}
-          <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:url" content="https://devpenzil.dev/" />
-          <meta property="twitter:title" content="Devpenzil | Home" />
-          <meta
-            property="twitter:description"
-            content="Personal Website of Ajoalex aka Devpenzil"
-          />
-          <meta property="twitter:image" content />
-        
+        <meta
+          name="description"
+          content="Personal Website of Ajoalex aka Devpenzil"
+        />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://devpenzil.dev/" />
+        <meta property="og:title" content="Devpenzil | Home" />
+        <meta
+          property="og:description"
+          content="Personal Website of Ajoalex aka Devpenzil"
+        />
+        <meta property="og:image" content />
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://devpenzil.dev/" />
+        <meta property="twitter:title" content="Devpenzil | Home" />
+        <meta
+          property="twitter:description"
+          content="Personal Website of Ajoalex aka Devpenzil"
+        />
+        <meta property="twitter:image" content />
       </Head>
     </div>
   );
