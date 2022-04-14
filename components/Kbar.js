@@ -10,7 +10,6 @@ function Kbar() {
     { name: "Works", route: "/works", short: "o", type: "route" },
     { name: "Blogs", route: "/blogs", short: "b", type: "route" },
     { name: "Tool Box", route: "/toolbox", short: "t", type: "route" },
-    { name: "Stats", route: "/stats", short: "s", type: "route" },
     {
       name: "Github",
       route: "https://github.com/devpenzil",
