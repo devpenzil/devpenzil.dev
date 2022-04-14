@@ -7,7 +7,10 @@ import Github from "../assets/svg/Github";
 import Linkedin from "../assets/svg/Linkedin";
 import Instagram from "../assets/svg/Instagram";
 import Twitter from "../assets/svg/Twitter";
+import { useRouter } from "next/router";
+
 function NavBar() {
+  const router = useRouter();
   const [dark, setDark] = useState(false);
   const [mmenuOpen, SetMmenuOpen] = useState(false);
   useEffect(() => {
@@ -27,7 +30,33 @@ function NavBar() {
       prevScrollpos = currentScrollPos;
     };
   }, [dark]);
-
+  const navItems = [
+    {
+      name: "Home",
+      route: "/",
+      active: router.pathname === "/" ? true : false,
+    },
+    {
+      name: "About",
+      route: "/about",
+      active: router.pathname === "/about" ? true : false,
+    },
+    {
+      name: "Works",
+      route: "/works",
+      active: router.pathname === "/works" ? true : false,
+    },
+    {
+      name: "Blogs",
+      route: "/blogs",
+      active: router.pathname === "/blogs" ? true : false,
+    },
+    {
+      name: "Stats",
+      route: "/stats",
+      active: router.pathname === "/stats" ? true : false,
+    },
+  ];
   return (
     <>
       <div className="md:hidden flex flex-row justify-between items-center p-6">
@@ -51,23 +80,22 @@ function NavBar() {
         </div>
       </div>
       {mmenuOpen && (
-        <div className="fixed w-full h-screen bg-white dark:bg-slate-800">
+        <div className="fixed w-full h-screen bg-white dark:bg-slate-800 z-50">
           <div className="w-full h-screen flex flex-col space-y-3 items-center px-6">
-            <span>
-              <Link href="/">Home</Link>
-            </span>
-            <span>
-              <Link href="/about">About</Link>
-            </span>
-            <span>
-              <Link href="/works">Works</Link>
-            </span>
-            <span>
-              <Link href="/blogs">Blogs</Link>
-            </span>
-            <span>
-              <Link href="/stats">stats</Link>
-            </span>
+            {navItems.map((obj) => {
+              return (
+                <span
+                  className={
+                    " px-4 py-2  " +
+                    (obj.active === true &&
+                      "underline underline-offset-4 decoration-2 decoration-emerald-300 ")
+                  }
+                >
+                  <Link href={obj.route}>{obj.name}</Link>
+                </span>
+              );
+            })}
+
             <button
               onClick={() => {
                 setDark(!dark);
@@ -127,21 +155,19 @@ function NavBar() {
               />
             </div>
             <div className="space-x-8 md:block hidden">
-              <span className="rounded-full hover:bg-slate-50 px-4 py-2 hover:text-slate-900">
-                <Link href="/">Home</Link>
-              </span>
-              <span className="rounded-full hover:bg-slate-100 px-4 py-2 hover:text-slate-900">
-                <Link href="/about">About</Link>
-              </span>
-              <span className="rounded-full hover:bg-slate-100 px-4 py-2 hover:text-slate-900">
-                <Link href="/works">Works</Link>
-              </span>
-              <span className="rounded-full hover:bg-slate-100 px-4 py-2 hover:text-slate-900">
-                <Link href="/blogs">Blogs</Link>
-              </span>
-              <span className="rounded-full hover:bg-slate-100 px-4 py-2 hover:text-slate-900">
-                <Link href="/stats">stats</Link>
-              </span>
+              {navItems.map((obj) => {
+                return (
+                  <span
+                    className={
+                      "rounded-full hover:bg-slate-50 px-4 py-2 hover:text-slate-900 " +
+                      (obj.active === true &&
+                        "underline underline-offset-4 decoration-2 decoration-emerald-300 ")
+                    }
+                  >
+                    <Link href={obj.route}>{obj.name}</Link>
+                  </span>
+                );
+              })}
             </div>
             <div className="space-x-8">
               <button
