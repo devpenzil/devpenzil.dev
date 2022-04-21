@@ -9,6 +9,7 @@ function Kbar() {
     { name: "About", route: "/about", short: "a", type: "route" },
     { name: "Works", route: "/works", short: "o", type: "route" },
     { name: "Blogs", route: "/blogs", short: "b", type: "route" },
+    { name: "Support", route: "/support", short: "u", type: "route" },
     { name: "Tool Box", route: "/toolbox", short: "t", type: "route" },
     {
       name: "Github",

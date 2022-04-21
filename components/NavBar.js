@@ -51,6 +51,11 @@ function NavBar() {
       route: "/blogs",
       active: router.pathname === "/blogs" ? true : false,
     },
+    {
+      name: "Support",
+      route: "/support",
+      active: router.pathname === "/support" ? true : false,
+    },
   ];
   return (
     <>
