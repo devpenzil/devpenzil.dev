@@ -18,24 +18,42 @@ function Projects({ projects }) {
     <div className="w-full dark:bg-slate-800 dark:text-slate-50">
       <HeadSection title="Devpenzil | Projects" />
       <section className="mx-auto container md:w-2/3 w-full p-2">
-        <div className="text-4xl font-semibold">Tools / Utils</div>
+        <div className="text-4xl font-semibold">Products</div>
 
         <div className=" w-full flex my-6 flex-wrap">
           {projects
             .filter((project) => project.type === "tool")
             .map((obj, index) => {
               return (
-                <>
+                <div className="relative w-60 h-72 group">
+                  <div className="absolute z-50">
+                    <a href={obj.liveurl}>
+                      <div
+                        title={obj.name}
+                        className="w-60 h-72  bg-white hover:hidden group-hover:hidden shadow-2xl rounded-lg m-4 p-6 bg-origin-content hover:scale-110 transition duration-300"
+                      >
+                        <div
+                          className="h-40 w-full bg-contain bg-center bg-no-repeat "
+                          style={{
+                            backgroundImage: `url(${obj.coverimage.url})`,
+                          }}
+                        ></div>
+                        <div className="overflow-hidden">
+                          <div className="text-xl font-semibold text-center mt-4">
+                            {obj.name}
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                   <a href={obj.liveurl}>
-                    <div
-                      title={obj.name}
-                      className="w-40 h-40 bg-contain bg-center bg-no-repeat shadow-2xl rounded-lg m-4 p-6 bg-origin-content hover:scale-110 transition duration-300"
-                      style={{
-                        backgroundImage: `url(${obj.coverimage.url})`,
-                      }}
-                    ></div>
+                    <div className="absolute z-0">
+                      <div className="w-60 h-72 bg-white  shadow-2xl rounded-lg m-4 p-6 bg-origin-content hover:scale-110 transition duration-300 flex justify-center items-center text-center font-semibold">
+                        {obj.description}
+                      </div>
+                    </div>
                   </a>
-                </>
+                </div>
               );
             })}
         </div>

@@ -17,17 +17,17 @@ function Support() {
           </div>
           <div className="md:w-1/2 text-lg px-16 md:px-2">
             <div className="text-2xl font-bold">Do you like my works ?</div>
-            <p>
+            {/* <p>
               If you want to support me. You can buy my supporter badge{" "}
               <b>nft</b> from <b>opensea</b>. Its nearly costs only 10 Dollars.
             </p>
             <ul className="list-disc mt-4 list-inside">
               <li>You get a devpenzil supporter badge</li>
               <li>You are supporting me with next generation way</li>
-            </ul>
+            </ul> */}
             <div className="mt-6 text-teal-600 hover:underline underline-offset-2 decoration-dashed">
               <a
-                href="https://opensea.io/collection/support-for-devpenzil"
+                href="https://www.buymeacoffee.com/devpenzil"
                 className="flex items-center"
               >
                 Be my supporter <RightArrow stroke="#14b8a6" />
