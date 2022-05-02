@@ -49,7 +49,7 @@ export const THREEBLOGDETAILS = gql`
 `
 export const GETPROJECTS = gql`
   {
-    projects(orderBy: id_ASC) {
+    projects(orderBy: id_DESC) {
       name,
       description,
       liveurl,

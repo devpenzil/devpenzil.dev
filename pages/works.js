@@ -20,17 +20,17 @@ function Projects({ projects }) {
       <section className="mx-auto container md:w-2/3 w-full p-2">
         <div className="text-4xl font-semibold">Products</div>
 
-        <div className=" w-full flex my-6 flex-wrap">
+        <div className=" w-full flex my-6 flex-wrap justify-center md:justify-start">
           {projects
             .filter((project) => project.type === "tool")
             .map((obj, index) => {
               return (
-                <div className="relative w-60 h-72 group">
-                  <div className="absolute z-50">
+                <div className="relative w-60 h-72 group mx-6 my-6 shadow-lg">
+                  <div className="absolute z-10 top-0 left-0">
                     <a href={obj.liveurl}>
                       <div
                         title={obj.name}
-                        className="w-60 h-72  bg-white hover:hidden group-hover:hidden shadow-2xl rounded-lg m-4 p-6 bg-origin-content hover:scale-110 transition duration-300"
+                        className="w-60 h-72  bg-white hover:hidden group-hover:hidden rounded-lg  p-6 bg-origin-content transition duration-300"
                       >
                         <div
                           className="h-40 w-full bg-contain bg-center bg-no-repeat "
@@ -48,7 +48,7 @@ function Projects({ projects }) {
                   </div>
                   <a href={obj.liveurl}>
                     <div className="absolute z-0">
-                      <div className="w-60 h-72 bg-white  shadow-2xl rounded-lg m-4 p-6 bg-origin-content hover:scale-110 transition duration-300 flex justify-center items-center text-center font-semibold">
+                      <div className="w-60 h-72 bg-white  rounded-lg  p-6 bg-origin-content  transition duration-300 flex justify-center items-center text-center font-semibold">
                         {obj.description}
                       </div>
                     </div>
