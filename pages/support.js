@@ -27,7 +27,7 @@ function Support() {
             </ul> */}
             <div className="mt-6 text-teal-600 hover:underline underline-offset-2 decoration-dashed">
               <a
-                href="https://www.buymeacoffee.com/devpenzil"
+                href="https://buy.stripe.com/eVa8wzbtkd2S7JK4gi"
                 className="flex items-center"
               >
                 Be my supporter <RightArrow stroke="#14b8a6" />
