@@ -88,7 +88,7 @@ function NavBar() {
                   className={
                     " px-4 py-2  " +
                     (obj.active === true &&
-                      "underline underline-offset-4 decoration-2 decoration-emerald-300 ")
+                      "underline underline-offset-4 decoration-2 decoration-emerald-300 font-semibold ")
                   }
                 >
                   <Link href={obj.route}>{obj.name}</Link>
