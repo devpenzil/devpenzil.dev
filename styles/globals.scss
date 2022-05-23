@@ -54,6 +54,12 @@ body {
   li {
     display: list-item;
   }
+  a {
+    color: coral;
+  }
+  strong {
+    font-weight: bold;
+  }
 }
 
 body::-webkit-scrollbar {
