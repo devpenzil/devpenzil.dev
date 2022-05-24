@@ -11,100 +11,51 @@ export async function getStaticProps() {
   };
 }
 function Projects({ projects }) {
-  const [image, SetImage] = useState(
-    "https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  );
   return (
     <div className="w-full dark:bg-slate-800 dark:text-slate-50">
       <HeadSection title="Devpenzil | Projects" />
-      <section className="mx-auto container md:w-2/3 w-full p-2">
-        <div className="text-4xl font-semibold">Products</div>
 
-        <div className=" w-full flex my-6 flex-wrap justify-center md:justify-start">
+      <section className="mx-auto container md:w-2/3 w-full p-2">
+        {/* <div className="text-4xl font-semibold">Works</div> */}
+        <div className="w-full flex md:flex-row flex-col flex-wrap mt-5  overflow-y-scroll no-scrollbar">
           {projects
             .filter((project) => project.type === "tool")
             .map((obj, index) => {
               return (
-                <div className="relative w-60 h-72 group mx-6 my-6 shadow-lg">
-                  <div className="absolute z-10 top-0 left-0">
-                    <a href={obj.liveurl}>
-                      <div
-                        title={obj.name}
-                        className="w-60 h-72  bg-white hover:hidden group-hover:hidden rounded-lg  p-6 bg-origin-content transition duration-300"
-                      >
-                        <div
-                          className="h-40 w-full bg-contain bg-center bg-no-repeat "
-                          style={{
-                            backgroundImage: `url(${obj.coverimage.url})`,
-                          }}
-                        ></div>
-                        <div className="overflow-hidden">
-                          <div className="text-xl font-semibold text-center mt-4">
-                            {obj.name}
-                          </div>
-                        </div>
-                      </div>
-                    </a>
+                <>
+                  <div className="md:w-1/2 w-full pr-4 mt-4 cursor-pointer">
+                    <div
+                      className=" bg-slate-100 w-full h-96 rounded-lg bg-cover bg-center bg-no-repeat"
+                      style={{
+                        backgroundImage: `url(${obj.coverimage.url})`,
+                      }}
+                    />
                   </div>
-                  <a href={obj.liveurl}>
-                    <div className="absolute z-0">
-                      <div className="w-60 h-72 bg-white  rounded-lg  p-6 bg-origin-content  transition duration-300 flex justify-center items-center text-center font-semibold">
-                        {obj.description}
-                      </div>
-                    </div>
-                  </a>
-                </div>
+                </>
+              );
+            })}
+          {projects
+            .filter((project) => project.type === "work")
+            .map((obj, index) => {
+              return (
+                <>
+                  <div className="md:w-1/2 w-full pr-4 mt-4">
+                    <div
+                      className=" bg-slate-100 w-full h-96 rounded-lg bg-cover bg-center bg-no-repeat"
+                      style={{
+                        backgroundImage: `url(${obj.coverimage.url})`,
+                      }}
+                    />
+                  </div>
+                </>
               );
             })}
         </div>
       </section>
-      <section className="mx-auto container md:w-2/3 w-full p-2">
-        <div className="text-4xl font-semibold">Works</div>
-        <div className="w-full flex flex-row mt-5 space-x-4 overflow-y-scroll no-scrollbar p-1">
-          <div className="md:w-1/2 w-full h-96">
-            {projects
-              .filter((project) => project.type === "work")
-              .map((obj, index) => {
-                return (
-                  <>
-                    <a
-                      href={obj.repourl}
-                      key={index}
-                      target="_blank"
-                      onMouseOver={() => {
-                        SetImage(obj.coverimage.url);
-                      }}
-                      onMouseLeave={() => {
-                        SetImage(
-                          "https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        );
-                      }}
-                    >
-                      <div className="w-full bg-slate-100 py-6 px-4 rounded-md mt-5 cursor-pointer hover:ring-1 ring-slate-600 dark:bg-slate-900">
-                        <div className="text-xl font-bold ">{obj.name}</div>
-                        <div className="text-sm font-light">
-                          {obj.description}
-                        </div>
-                      </div>
-                    </a>
-                  </>
-                );
-              })}
-          </div>
-          <div className="w-1/2 hidden sm:block sticky top-0">
-            <div
-              className="m-4 bg-slate-100 w-full h-96 rounded-lg bg-cover bg-center bg-no-repeat"
-              style={{
-                backgroundImage: `url(${image})`,
-              }}
-            />
-          </div>
-        </div>
-      </section>
-      <section className="mx-auto container md:w-2/3 w-full p-2">
+      <section className="mx-auto container md:w-2/3 w-full p-2 mt-8">
         <div className="text-4xl font-semibold">Contributions</div>
 
-        <div className=" w-full flex my-6 flex-wrap">
+        <div className=" w-full flex  flex-wrap">
           {projects
             .filter((project) => project.type === "contribution")
             .map((obj, index) => {

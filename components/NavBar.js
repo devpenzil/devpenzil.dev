@@ -3,10 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import HamBurger from "../assets/svg/HamBurger";
 import Close from "../assets/svg/Close";
-import Github from "../assets/svg/Github";
-import Linkedin from "../assets/svg/Linkedin";
-import Instagram from "../assets/svg/Instagram";
-import Twitter from "../assets/svg/Twitter";
 import { useRouter } from "next/router";
 
 function NavBar() {
@@ -122,20 +118,6 @@ function NavBar() {
               )}
             </button>
             <div className="h-10" />
-            <div className="space-x-4 flex">
-              <a href="https://github.com/devpenzil">
-                <Github />
-              </a>
-              <a href="https://www.linkedin.com/in/devpenzil/">
-                <Linkedin />
-              </a>
-              <a href="https://instagram.com/devpenzil">
-                <Instagram />
-              </a>
-              <a href="https://twitter.com/devpenzil">
-                <Twitter />
-              </a>
-            </div>
           </div>
         </div>
       )}
