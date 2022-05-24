@@ -23,7 +23,12 @@ function Projects({ projects }) {
             .map((obj, index) => {
               return (
                 <>
-                  <div className="md:w-1/2 w-full pr-4 mt-4 cursor-pointer">
+                  <div
+                    className="md:w-1/2 w-full pr-4 mt-4 cursor-pointer"
+                    onClick={() => {
+                      window.open(obj.liveurl);
+                    }}
+                  >
                     <div
                       className=" bg-slate-100 w-full h-96 rounded-lg bg-cover bg-center bg-no-repeat"
                       style={{
@@ -39,7 +44,12 @@ function Projects({ projects }) {
             .map((obj, index) => {
               return (
                 <>
-                  <div className="md:w-1/2 w-full pr-4 mt-4">
+                  <div
+                    className="md:w-1/2 w-full pr-4 mt-4 cursor-pointer"
+                    onClick={() => {
+                      window.open(obj.liveurl);
+                    }}
+                  >
                     <div
                       className=" bg-slate-100 w-full h-96 rounded-lg bg-cover bg-center bg-no-repeat"
                       style={{
@@ -47,28 +57,6 @@ function Projects({ projects }) {
                       }}
                     />
                   </div>
-                </>
-              );
-            })}
-        </div>
-      </section>
-      <section className="mx-auto container md:w-2/3 w-full p-2 mt-8">
-        <div className="text-4xl font-semibold">Contributions</div>
-
-        <div className=" w-full flex  flex-wrap">
-          {projects
-            .filter((project) => project.type === "contribution")
-            .map((obj, index) => {
-              return (
-                <>
-                  <a href={obj.liveurl}>
-                    <div
-                      className="w-40 h-40 bg-contain bg-center bg-no-repeat shadow-2xl rounded-lg m-4 p-6 bg-origin-content hover:scale-110 transition duration-300"
-                      style={{
-                        backgroundImage: `url(${obj.coverimage.url})`,
-                      }}
-                    ></div>
-                  </a>
                 </>
               );
             })}
