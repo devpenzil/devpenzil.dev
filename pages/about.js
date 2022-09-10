@@ -3,7 +3,6 @@ import Timeline from "../components/Timeline";
 import HeadSection from "../components/HeadSection";
 import { TIMELINEQUERY, GETTOKENS, ABOUT, MYIMAGE } from "../queries/queries";
 import { graphcms } from "../graphcms/config";
-import Crypto from "../components/Crypto";
 import Aboutme from "../components/Aboutme";
 export async function getStaticProps() {
   const { timelines } = await graphcms.request(TIMELINEQUERY);
@@ -25,7 +24,6 @@ function About({ timelines, cryptos, about, asset }) {
       <HeadSection title="Devpenzil | About" />
       <Aboutme data={about.about} image={asset.url} />
       <Timeline data={timelines} />
-      <Crypto data={cryptos} />
       <div className="h-5" />
     </div>
   );

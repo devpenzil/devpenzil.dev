@@ -14,7 +14,6 @@ function Projects({ projects }) {
   return (
     <div className="w-full dark:bg-slate-800 dark:text-slate-50">
       <HeadSection title="Devpenzil | Projects" />
-
       <section className="mx-auto container md:w-2/3 w-full p-2">
         {/* <div className="text-4xl font-semibold">Works</div> */}
         <div className="w-full flex md:flex-row flex-col flex-wrap mt-5  overflow-y-scroll no-scrollbar">

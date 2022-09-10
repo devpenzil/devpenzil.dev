@@ -7,7 +7,7 @@ function HeroSpotlight() {
   return (
     <>
       <section className="overflow-hidden relative">
-        <div className="container md:w-2/3 p-2 md:py-40 py-4 mx-auto flex md:flex-row flex-col-reverse justify-between items-center">
+        <div className="container md:w-2/3 p-2 md:py-20 py-4 mx-auto flex md:flex-row flex-col-reverse justify-between items-center">
           <div className="text-center md:text-left md:text-5xl text-lg font-semibold w-full  md:leading-relaxed">
             I&#39;m <span className="text-pink-400">Ajo Alex</span>. I&#39;m a
             Front End Developer, working at{" "}
