@@ -2,3 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
+.blurone{
+    /* animation: blurone; */
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    left: 0;
+    top: 0;
+}
+@keyframes blurone {
+    0%{
+        left: 0%;
+        top: 0%;
+    }
+    10%{
+        left: 10%;
+        top: 20%;
+    }
+    20%{
+        left: 30%;
+        top: 50%;
+    }
+    30%{
+        left: 60%;
+        top: 30%;
+    }
+    40%{
+        left: 80%;
+        top: 90%;
+    }
+    50%{
+        left: 40%;
+        top: 40%;
+    }
+    60%{
+        left: 60%;
+        top: 30%;
+    }
+    70%{
+        left: 80%;
+        top: 90%;
+    }
+    80%{
+        left: 10%;
+        top: 20%;
+    }
+    90%{
+        left: 40%;
+        top: 40%;
+    }
+    100%{
+        left: 30%;
+        top: 50%;
+    }
+}
