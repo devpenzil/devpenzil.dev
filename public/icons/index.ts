@@ -3,5 +3,6 @@ import Github from "./Github";
 import Package from "./Package";
 import HamBurger from "./HamBurger";
 import Settings from "./Settings";
+import Home from "./Home";
 
-export { Package, Pen, Github, HamBurger, Settings };
+export { Package, Pen, Github, HamBurger, Settings, Home };
