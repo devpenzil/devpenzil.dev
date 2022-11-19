@@ -55,3 +55,7 @@
         top: 50%;
     }
 }
+.markdown a{
+    color: purple;
+    font-weight: 700;
+}

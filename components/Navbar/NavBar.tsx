@@ -27,10 +27,15 @@ function NavBar() {
               {sociallinks.map((obj, index) => {
                 return (
                   <li key={index}>
-                    {obj.icon} <a href={obj.link}>{obj.name}</a>
+                    <a href={obj.link}>{obj.name}</a>
                   </li>
                 );
               })}
+              <hr />
+
+              <li>
+                <Link href="/status">Status</Link>
+              </li>
             </ul>
           </div>
         </div>
