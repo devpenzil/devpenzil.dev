@@ -6,7 +6,7 @@ import { HamBurger, Settings } from "../../public/icons";
 function NavBar() {
   return (
     <div>
-      <div className="absolute w-full p-4 justify-between flex">
+      <div className="fixed w-full p-4 justify-between flex">
         <div>
           <div className="dropdown">
             <label tabIndex={0} className="btn border-none focus:ring-2 ">
@@ -34,7 +34,16 @@ function NavBar() {
               <hr />
 
               <li>
-                <Link href="/status">Status</Link>
+                <Link
+                  href="/status"
+                  className="flex justify-between items-center"
+                >
+                  <span>Status</span>
+                  <span className="flex h-3 w-3 justify-center items-center">
+                    <span className="animate-ping absolute inline-flex h-5 w-5 rounded-full bg-red-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                  </span>
+                </Link>
               </li>
             </ul>
           </div>
@@ -49,10 +58,13 @@ function NavBar() {
               className="dropdown-content menu p-2 bg-white shadow-lg rounded-box w-52 mt-3"
             >
               <li>
-                <a>Item 1</a>
+                <a>Light Theme</a>
               </li>
               <li>
-                <a>Item 2</a>
+                <a>Gen z</a>
+              </li>
+              <li>
+                <a>Dark Theme</a>
               </li>
             </ul>
           </div>

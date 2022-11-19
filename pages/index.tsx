@@ -15,14 +15,14 @@ function Home() {
         </div>
         <div className="mt-6 flex space-x-6">
           <Link
-            href="/"
+            href="/blogs"
             className="border-2 border-gray-400 rounded-md px-8 py-2 text-gray-500 flex space-x-2 items-center"
           >
             <Pen />
             <span>Blogs</span>
           </Link>
           <Link
-            href="/"
+            href="/projects"
             className="border-2 border-gray-400 rounded-md px-8 py-2 text-gray-500 flex space-x-2 items-center"
           >
             <Package />

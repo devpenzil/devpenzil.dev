@@ -6,6 +6,10 @@ export const sitelinks = [
   { name: "Projects", route: "/projects", icon: "" },
 ];
 export const sociallinks = [
-  { name: "Github", link: "/", icon: Github },
-  { name: "Linkedin", link: "/about", icon: Github },
+  { name: "Github", link: "https://github.com/devpenzil", icon: Github },
+  {
+    name: "Linkedin",
+    link: "https://www.linkedin.com/in/devpenzil/",
+    icon: Github,
+  },
 ];
