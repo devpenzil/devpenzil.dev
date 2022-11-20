@@ -1,4 +1,4 @@
-import { GraphQLClient } from 'graphql-request';
+import { GraphQLClient } from "graphql-request";
 export const graphcms = new GraphQLClient(
-    process.env.BASEURL
-  );
+  "https://api-ap-south-1.hygraph.com/v2/cl089j13g30ic01xr7sech297/master"
+);
