@@ -5,11 +5,11 @@ import NextNProgress from "nextjs-progressbar";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <div>
       <NextNProgress />
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    </>
+    </div>
   );
 }

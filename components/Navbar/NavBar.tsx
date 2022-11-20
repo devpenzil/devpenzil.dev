@@ -18,7 +18,7 @@ function NavBar() {
             >
               {sitelinks.map((obj, index) => {
                 return (
-                  <li key={index}>
+                  <li key={index} className="hover:bg-gray-100 rounded-md">
                     <Link href={obj.route}>{obj.name}</Link>
                   </li>
                 );
@@ -26,14 +26,14 @@ function NavBar() {
               <hr />
               {sociallinks.map((obj, index) => {
                 return (
-                  <li key={index}>
+                  <li key={index} className="hover:bg-gray-100 rounded-md">
                     <a href={obj.link}>{obj.name}</a>
                   </li>
                 );
               })}
               <hr />
 
-              <li>
+              <li className="hover:bg-gray-100 rounded-md">
                 <Link href="/" className="flex justify-between items-center">
                   <span>Status</span>
                   <span className="flex h-3 w-3 justify-center items-center">
@@ -54,14 +54,16 @@ function NavBar() {
               tabIndex={0}
               className="dropdown-content menu p-2 bg-white shadow-lg rounded-box w-52 mt-3"
             >
-              {/* <li>
-                <a>Light Theme</a>
+              <li className="hover:bg-gray-100 rounded-md">
+                <Link href="/" className="flex justify-between items-center">
+                  <span>Light theme</span>
+                  <span className="flex h-3 w-3 justify-center items-center">
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+                  </span>
+                </Link>
               </li>
-              <li>
-                <a>Gen z</a>
-              </li> */}
-              <li>
-                <a>Coming Soon</a>
+              <li className="hover:bg-gray-100 rounded-md">
+                <a>Gen z (coming soon)</a>
               </li>
             </ul>
           </div>

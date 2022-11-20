@@ -15,7 +15,7 @@ export async function getStaticProps() {
     },
   };
 }
-function Timeline({ timelines, about }) {
+function Timeline({ about }: any) {
   return (
     <>
       <Header page="About" />
