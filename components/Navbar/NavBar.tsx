@@ -34,14 +34,11 @@ function NavBar() {
               <hr />
 
               <li>
-                <Link
-                  href="/status"
-                  className="flex justify-between items-center"
-                >
+                <Link href="/" className="flex justify-between items-center">
                   <span>Status</span>
                   <span className="flex h-3 w-3 justify-center items-center">
-                    <span className="animate-ping absolute inline-flex h-5 w-5 rounded-full bg-red-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                    <span className="animate-ping absolute inline-flex h-5 w-5 rounded-full bg-green-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                   </span>
                 </Link>
               </li>
@@ -57,14 +54,14 @@ function NavBar() {
               tabIndex={0}
               className="dropdown-content menu p-2 bg-white shadow-lg rounded-box w-52 mt-3"
             >
-              <li>
+              {/* <li>
                 <a>Light Theme</a>
               </li>
               <li>
                 <a>Gen z</a>
-              </li>
+              </li> */}
               <li>
-                <a>Dark Theme</a>
+                <a>Coming Soon</a>
               </li>
             </ul>
           </div>

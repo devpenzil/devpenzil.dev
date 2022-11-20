@@ -24,7 +24,7 @@ function toolbox({ tools }: Tools) {
   return (
     <>
       <Header page="ToolBox" />
-      <div className="container mx-auto py-16 w-1/2">
+      <div className="container md:w-2/3 lg:1/2  mx-auto py-16 ">
         <div className="text-2xl font-semibold">Hardware</div>
         {tools
           .filter((tool) => tool.category === "hardware")

@@ -19,7 +19,7 @@ function Timeline({ timelines, about }) {
   return (
     <>
       <Header page="About" />
-      <div className="container w-1/2 py-16 mx-auto">
+      <div className="container md:w-2/3 lg:1/2 px-4 py-16 mx-auto">
         <AboutNote data={about?.about} />
         <MyGear />
       </div>

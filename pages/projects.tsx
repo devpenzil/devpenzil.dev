@@ -25,7 +25,7 @@ function Projects({ projects }: Projects) {
   return (
     <>
       <Header page="Projects" />
-      <div className="container mx-auto pt-16 w-1/2">
+      <div className="container md:w-2/3 lg:1/2 px-4 mx-auto pt-16">
         {projects.map((obj, index) => {
           return (
             <div

@@ -29,22 +29,22 @@ function Blog({ blogs }: Blogs) {
   return (
     <>
       <Header page="Blogs" />
-      <div className="container mx-auto py-16 w-2/3">
+      <div className="container md:w-2/3 lg:1/2 px-4 mx-auto py-16 ">
         {blogs.map((obj, index) => {
           return (
-            <Link href="/" key={index}>
-              <div className=" h-[300px] flex rounded-md overflow-hidden shadow-lg my-4">
-                <div className="w-1/2 min-h-full">
+            <Link href={`/blog/${obj.slug}`} key={index}>
+              <div className=" md:h-[300px] flex md:flex-row flex-col rounded-md overflow-hidden shadow-lg my-4">
+                <div className="md:w-1/2 min-h-full">
                   <div
-                    className="w-full h-[300px] bg-red-400 rounded-md bg-cover bg-no-repeat "
+                    className="w-full h-[300px] bg-red-400 rounded-md bg-cover bg-no-repeat bg-center "
                     style={{
                       backgroundImage: `url(${obj.coverImage.url})`,
                     }}
                   ></div>
                 </div>
-                <div className="p-6 flex flex-col justify-evenly w-1/2">
+                <div className="p-6 flex flex-col justify-evenly md:w-1/2 min-h-full">
                   <div className="text-3xl font-bold">{obj.name}</div>
-                  <div className="bg-blue-200 text-blue-800 w-fit px-4 py-1 rounded flex items-center space-x-3">
+                  <div className="bg-blue-200 text-blue-800 w-fit px-4 py-1 rounded flex items-center space-x-3 mt-6">
                     <Calender /> <span>{obj.date}</span>
                   </div>
                 </div>
