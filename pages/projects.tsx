@@ -33,7 +33,6 @@ function Projects({ projects }: Projects) {
               className="w-full p-4 mt-4 rounded border flex justify-between items-center "
             >
               <div className="flex items-center space-x-4">
-                <div>{obj.emoji}</div>
                 <div>
                   <div className="text-base font-bold">{obj.name}</div>
                   <div className="text-sm">{obj.description}</div>
