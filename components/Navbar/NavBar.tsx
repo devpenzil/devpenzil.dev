@@ -34,7 +34,10 @@ function NavBar() {
               <hr />
 
               <li className="hover:bg-gray-100 rounded-md">
-                <Link href="/" className="flex justify-between items-center">
+                <Link
+                  href="/status"
+                  className="flex justify-between items-center"
+                >
                   <span>Status</span>
                   <span className="flex h-3 w-3 justify-center items-center">
                     <span className="animate-ping absolute inline-flex h-5 w-5 rounded-full bg-green-400 opacity-75"></span>

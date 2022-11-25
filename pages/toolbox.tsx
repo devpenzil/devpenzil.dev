@@ -20,7 +20,6 @@ interface Tools {
   }[];
 }
 function toolbox({ tools }: Tools) {
-  console.log(tools);
   return (
     <>
       <Header page="ToolBox" />

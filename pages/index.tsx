@@ -14,7 +14,7 @@ function Home() {
         <div className="lg:text-8xl text-center text-5xl font-bold mt-6">
           a developer
         </div>
-        <div className="mt-10 opacity-60 text-lg text-center ">
+        <div className="mt-10 text-gray-600 text-lg text-center ">
           I am a 21 year old Mobile engineer & UI developer
         </div>
         <div className="mt-6 flex md:space-x-6 flex-col md:flex-row items-center space-y-3 md:space-y-0">

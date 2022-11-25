@@ -53,7 +53,7 @@ function Blog({ blog }: any) {
   return (
     <>
       <Header page={blog ? blog.name : "blog"} />
-      <div className="container md:w-2/3 lg:1/2 mx-auto py-16 markdown">
+      <div className="container md:w-2/3 lg:1/2 mx-auto py-16 markdown px-4">
         <div
           className="w-full h-[400px] bg-slate-300 bg-cover bg-center mb-4 rounded-xl"
           style={{

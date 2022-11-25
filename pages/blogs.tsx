@@ -25,7 +25,6 @@ interface Blogs {
   }[];
 }
 function Blog({ blogs }: Blogs) {
-  console.log(blogs);
   return (
     <>
       <Header page="Blogs" />
