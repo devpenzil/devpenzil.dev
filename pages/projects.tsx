@@ -3,6 +3,7 @@ import Header from "../components/header/Header";
 import { graphcms } from "../graphcms/config";
 import { Github, Home } from "../public/icons";
 import { GETPROJECTS } from "../queries/query";
+import { motion } from "framer-motion";
 export async function getStaticProps() {
   const { projects } = await graphcms.request(GETPROJECTS);
   return {
@@ -28,9 +29,15 @@ function Projects({ projects }: Projects) {
       <div className="container md:w-2/3 lg:1/2 px-4 mx-auto pt-16">
         {projects.map((obj, index) => {
           return (
-            <div
+            <motion.div
               key={index}
               className="w-full p-4 mt-4 rounded border flex justify-between items-center "
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{
+                type: "spring",
+                delay: 0.05 * (index + 1),
+              }}
             >
               <div className="flex items-center space-x-4">
                 <div>
@@ -50,7 +57,7 @@ function Projects({ projects }: Projects) {
                   </div>
                 </a>
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </div>

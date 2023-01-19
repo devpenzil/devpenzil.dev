@@ -2,6 +2,7 @@ import React from "react";
 import { graphcms } from "../../graphcms/config";
 import ReactMarkdown from "react-markdown";
 import Header from "../../components/header/Header";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 export async function getStaticProps({ params }: any) {
   const { blog } = await graphcms.request(
@@ -50,6 +51,7 @@ export async function getStaticPaths() {
 }
 
 function Blog({ blog }: any) {
+  const { scrollYProgress } = useScroll();
   return (
     <>
       <Header page={blog ? blog.name : "blog"} />
@@ -62,6 +64,10 @@ function Blog({ blog }: any) {
         />
         <div className="text-4xl font-semibold py-4">{blog.name}</div>
         <ReactMarkdown>{blog.content.markdown}</ReactMarkdown>
+        <motion.div
+          className="h-2 w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 fixed bottom-0 left-0 origin-[0%] rounded-r-full "
+          style={{ scaleX: scrollYProgress }}
+        />
       </div>
     </>
   );

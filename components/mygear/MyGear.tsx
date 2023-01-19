@@ -8,10 +8,7 @@ function MyGear() {
         <div className="text-2xl font-semibold">Are you curious</div>
         <div className="text-sm">to know what is in my desk and desktop</div>
       </div>
-      <Link
-        href="/toolbox"
-        className="bg-blue-400 px-3 py-2 rounded text-white"
-      >
+      <Link href="/toolbox" className=" px-3 py-2 rounded text-black">
         Checkout
       </Link>
     </div>
