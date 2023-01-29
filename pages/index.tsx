@@ -1,13 +1,15 @@
 import React from "react";
 import Link from "next/link";
-import { Package, Github, Pen } from "../public/icons";
-import Header from "../components/header/Header";
+import { Package, Pen, User } from "../public/icons";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 function Home() {
   return (
     <>
-      <Header page="Home" />
+      <Head>
+        <title>Devpenzil | Home </title>
+      </Head>
       <div className=" h-screen flex flex-col justify-center items-center p-4">
         <motion.div
           className="lg:text-8xl text-center text-5xl font-bold"
@@ -87,7 +89,7 @@ function Home() {
               href="/about"
               className="border-2 border-gray-400 rounded-md px-8 py-2 text-gray-500 flex space-x-2 items-center"
             >
-              <Github />
+              <User />
               <span>About</span>
             </Link>
           </motion.div>

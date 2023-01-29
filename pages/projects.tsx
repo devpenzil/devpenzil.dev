@@ -23,6 +23,7 @@ interface Projects {
   }[];
 }
 function Projects({ projects }: Projects) {
+  console.log(projects);
   return (
     <>
       <Header page="Projects" />

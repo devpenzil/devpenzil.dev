@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import Header from "../components/header/Header";
 import { graphcms } from "../graphcms/config";
@@ -29,9 +30,15 @@ function toolbox({ tools }: Tools) {
           .filter((tool) => tool.category === "hardware")
           .map((obj, index) => {
             return (
-              <div
+              <motion.div
                 key={index}
                 className="w-full p-4 mt-4 rounded border flex justify-between items-center "
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{
+                  type: "spring",
+                  delay: 0.05 * (index + 1),
+                }}
               >
                 <div className="flex items-center space-x-4">
                   <div>
@@ -46,7 +53,7 @@ function toolbox({ tools }: Tools) {
                     </div>
                   </a>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
 
@@ -55,9 +62,15 @@ function toolbox({ tools }: Tools) {
           .filter((tool) => tool.category === "apps")
           .map((obj, index) => {
             return (
-              <div
+              <motion.div
                 key={index}
                 className="w-full p-4 mt-4 rounded border flex justify-between items-center "
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{
+                  type: "spring",
+                  delay: 0.05 * (index + 1),
+                }}
               >
                 <div className="flex items-center space-x-4">
                   <div>
@@ -72,7 +85,7 @@ function toolbox({ tools }: Tools) {
                     </div>
                   </a>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
       </div>

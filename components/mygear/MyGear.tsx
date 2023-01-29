@@ -9,7 +9,7 @@ function MyGear() {
         <div className="text-sm">to know what is in my desk and desktop</div>
       </div>
       <Link href="/toolbox" className=" px-3 py-2 rounded text-black">
-        Checkout
+        Go to toolbox
       </Link>
     </div>
   );
