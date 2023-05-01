@@ -24,7 +24,7 @@ function Footer() {
       </div>
       <div className="container mx-auto min-h-[400px] flex flex-col justify-center items-center">
         <div>Want to connect</div>
-        <div className="text-9xl font-bold mt-2">
+        <div className="lg:text-9xl md:text-4xl font-bold mt-2">
           <a href="https://twitter.com/devpenzil">twitter.com/devpenzil</a>
         </div>
         <div className="flex flex-row gap-8 mt-8 font-extralight">

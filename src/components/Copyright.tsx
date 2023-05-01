@@ -2,7 +2,7 @@ import React from "react";
 
 function Copyright() {
   return (
-    <div className="container mx-auto text-white flex flex-row justify-between items-center py-4 font-extralight">
+    <div className="container mx-auto text-white flex lg:flex-row flex-col justify-between items-center py-4 font-extralight">
       <div> © 2023 Ajo Alex</div>
       <div>
         Inspired from{" "}

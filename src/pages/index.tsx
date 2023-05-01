@@ -13,13 +13,13 @@ function Home() {
   return (
     <div>
       <Head>
-        <title>Ajo Alex - Mobile Engineer</title>
-        <meta name="title" content="Ajo Alex - Mobile Engineer" />
+        <title>Ajo Alex - React Native Engineer</title>
+        <meta name="title" content="Ajo Alex - React Native Engineer" />
         <meta name="description" content="" />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://devpenzil.dev/" />
-        <meta property="og:title" content="Ajo Alex - Mobile Engineer" />
+        <meta property="og:title" content="Ajo Alex - React Native Engineer" />
         <meta property="og:description" content="" />
         <meta
           property="og:image"
@@ -28,7 +28,10 @@ function Home() {
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://devpenzil.dev/" />
-        <meta property="twitter:title" content="Ajo Alex - Mobile Engineer" />
+        <meta
+          property="twitter:title"
+          content="Ajo Alex - React Native Engineer"
+        />
         <meta property="twitter:description" content="" />
         <meta
           property="twitter:image"

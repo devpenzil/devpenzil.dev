@@ -2,7 +2,7 @@ import React from "react";
 
 function Skills() {
   return (
-    <div className="w-full text-9xl font-bold py-16">
+    <div className="w-full lg:text-9xl font-bold py-16">
       <div className="marquee my-6">
         <div className="marquee__inner" aria-hidden="true">
           <span className="text-white"> React </span>

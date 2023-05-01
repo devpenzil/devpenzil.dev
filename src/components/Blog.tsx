@@ -1,21 +1,27 @@
+import { blogs } from "@/data/blogs";
 import React from "react";
 
 function Blog() {
   return (
-    <div className="min-h-[600px] bg-white w-full" id="blogs">
+    <div className="min-h-[600px] bg-white w-full md:px-8" id="blogs">
       <div className="container mx-auto py-16">
         <div className="text-center text-5xl font-bold">Latest Blogs</div>
-        <div className="flex justify-between mt-8">
-          {[1, 2, 3].map((obj, index) => {
+        <div className="flex justify-between mt-8 w-full flex-row overflow-scroll">
+          {blogs.map((obj, index) => {
             return (
-              <div key={index} className=" w-[31%] h-[400px]">
-                <div
-                  className="w-full h-full bg-gray-50 rounded bg-cover bg-center bg-no-repeat "
-                  style={{
-                    backgroundImage:
-                      'url("https://res.cloudinary.com/practicaldev/image/fetch/s--y5c1DL6T--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/eu8bjg1j02hyszloqfk4.jpg")',
-                  }}
-                ></div>
+              <div key={index} className=" lg:w-[31%] h-[400px]">
+                <a href={obj.link}>
+                  <div
+                    className="w-full h-full bg-gray-50 rounded bg-cover bg-center bg-no-repeat flex flex-col justify-end"
+                    style={{
+                      backgroundImage: `url("${obj.image}")`,
+                    }}
+                  >
+                    <div className="text-4xl text-black font-semibold w-full bg-slate-100 p-4">
+                      {obj.name}
+                    </div>
+                  </div>
+                </a>
               </div>
             );
           })}
