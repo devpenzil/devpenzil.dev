@@ -26,7 +26,7 @@ function Hero() {
         id="h1"
       >
         <div className="my-2">
-          <span className="outlineText">Hi, I'm</span>{" "}
+          <span className="outlineText">Hi, I&apos;m</span>{" "}
           <span className="text-white">Ajo</span>
           <span className="text-red-500">.</span>
         </div>
