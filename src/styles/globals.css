@@ -49,3 +49,9 @@ body{
       transform: translate3d(var(--move-final), 0, 0);
   }
 }
+html{
+  scroll-behavior: smooth;
+}
+/* div::selection, span::selection{
+  background-color: red;
+} */

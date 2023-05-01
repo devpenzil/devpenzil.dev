@@ -12,7 +12,9 @@ function Hero() {
         <div className="my-2 outlineText">React Native Engineer</div>
         <div className="my-2">
           <span className="outlineText">@</span>{" "}
-          <span className="text-white">Neoito</span>{" "}
+          <span className="text-white">
+            <a href="https://www.neoito.com/">Neoito</a>
+          </span>{" "}
           <span className="text-red-500">.</span>
         </div>
       </div>

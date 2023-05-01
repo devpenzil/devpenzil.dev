@@ -1,7 +1,11 @@
 import React from "react";
 
 function About() {
-  return <div className="w-full h-[600px] bg-white">About</div>;
+  return (
+    <div className="w-full h-[600px] " id="about">
+      About
+    </div>
+  );
 }
 
 export default About;
