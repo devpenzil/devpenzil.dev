@@ -12,7 +12,7 @@ function About() {
           <div className="w-1/2 font-semibold mt-7">
             I have a fondness for clean designs, subtle interactions and
             delightful user experiences. If you are interested you can check out
-            some of work on Dribbble or Behance.
+            some of work on Github.
           </div>
         </div>
       </div>
