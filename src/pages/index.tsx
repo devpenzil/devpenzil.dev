@@ -1,6 +1,7 @@
 import Profile from "@/components/Profile";
 import FindMe from "@/components/FindMe";
 import AboutMe from "@/components/AboutMe";
+import Blogs from "@/components/Blogs";
 
 function Home() {
   return (
@@ -8,14 +9,14 @@ function Home() {
       <div className="w-1/2 pt-24">
         <Profile />
       </div>
-      <div className="w-1/2 pt-24 h-screen overflow-scroll ">
-      <div className="text-3xl font-semibold mb-4 ">Find Me</div>
-      <FindMe />
-      <div className="text-3xl font-semibold mb-4 mt-14">About Me</div>
-      <AboutMe />
-      <div className="text-3xl font-semibold mb-4 mt-14">Blogs</div>
-      <FindMe />
-    
+      <div className="w-1/2 py-24 h-screen overflow-scroll ">
+        <FindMe />
+        <div className="mt-4">
+          <AboutMe />
+        </div>
+        <div className="mt-4">
+          <Blogs />
+        </div>
       </div>
     </div>
   );
