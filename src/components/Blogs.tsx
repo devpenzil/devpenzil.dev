@@ -21,7 +21,7 @@ function Blogs() {
         <Hashnode />
       </div>
       <div className="row-span-3 col-start-3 row-start-2">
-        <div className="w-full h-full  bg-[url('/cover.jpg')] bg-cover shadow-lg p-4 border rounded-2xl" />
+        <div className="w-full h-full  bg-[url('/IMG_1487.JPG')] bg-cover bg-center shadow-lg p-4 border rounded-2xl" />
       </div>
     </div>
   );

@@ -1,11 +1,14 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
 function ToolBox() {
   return (
-    <Link href={'/toolbox'} >
-    <div className='h-36 shadow-lg p-4 border rounded-2xl bg-[#c7bbc9] '>ToolBox</div></Link>
-  )
+    <Link href={"/toolbox"}>
+      <div className="h-36 shadow-lg p-4 border rounded-2xl flex justify-center items-center ">
+        ToolBox
+      </div>
+    </Link>
+  );
 }
 
-export default ToolBox
+export default ToolBox;
