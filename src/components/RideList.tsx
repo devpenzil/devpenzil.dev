@@ -6,7 +6,7 @@ function RideList() {
   return (
     <div>
       {rideList.map((obj) => {
-        return <div key={mapKey}>jhhgvj</div>;
+        return <div key={mapKey}>coming soon</div>;
       })}
     </div>
   );

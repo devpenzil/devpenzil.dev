@@ -3,8 +3,7 @@ import { experienceType } from "@/types/db";
 export const experience: experienceType = [
   {
     company_name: "Pit Solutions",
-    description:
-      "NeoITO is a service based company located in Trivandrum with many client projects. I am in the React Native team for delivering fast and scalable products to the clients on time. I have participated in the development cycle of a bunch of products. Its include App development (React Native), Frontend Development (React, Next js, Rest API etc)",
+    description: "",
     period: "2024 - Current",
   },
   {
