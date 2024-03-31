@@ -8,6 +8,9 @@ function Home() {
     <div className="container mx-auto flex flex-col lg:flex-row px-4 ">
       <div className="lg:w-1/2 pt-24">
         <Profile />
+        <div className="mt-6 text-red-800 text-xs">
+          The website is under maintenance. Some information will be incorrect
+        </div>
       </div>
       <div className="lg:w-1/2 py-24 lg:h-screen overflow-scroll ">
         <div className="hidden md:block">
