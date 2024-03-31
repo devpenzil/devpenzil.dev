@@ -11,3 +11,13 @@ export type toolBoxItemType = {
 };
 
 export type toolBoxType = Array<toolBoxItemType>;
+
+export type ridesType = {
+  place: string;
+  start_date: string;
+  end_date: string;
+  total_distance: number;
+  cover_photo: string;
+};
+
+export type rideListType = Array<ridesType>;
