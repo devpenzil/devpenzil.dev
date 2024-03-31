@@ -27,6 +27,11 @@ export const techDoc: toolBoxType = [
     image: "/ico/xcode.ico",
   },
   {
+    link: "https://www.jetbrains.com/pycharm/",
+    name: "Pycharm",
+    image: "/ico/pycharm.ico",
+  },
+  {
     link: "https://hoppscotch.com/",
     name: "Hoppscotch",
     image: "/ico/hoppscotch.ico",

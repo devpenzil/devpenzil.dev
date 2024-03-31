@@ -1,3 +1,4 @@
+import Back from "@/components/Back";
 import { experience } from "@/db/experience";
 import React, { useId } from "react";
 
@@ -5,6 +6,7 @@ function Experience() {
   const key = useId();
   return (
     <div className="w-2/3 mx-auto py-24">
+      <Back />
       <div className="text-6xl font-semibold mb-10">Experience</div>
       <ol className="relative border-s border-gray-200 dark:border-gray-700">
         {experience.map((obj) => {
