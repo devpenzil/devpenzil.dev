@@ -51,4 +51,9 @@ export const techDoc: toolBoxType = [
     name: "Fig",
     image: "/ico/fig.ico",
   },
+  {
+    link: "https://slack.com/intl/en-in/",
+    name: "Slack",
+    image: "/ico/slack.ico",
+  },
 ];

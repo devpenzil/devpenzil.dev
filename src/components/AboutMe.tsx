@@ -14,12 +14,12 @@ function AboutMe() {
       <div className="col-start-1 row-start-2">
         <ToolBox />
       </div>
-      <div className="col-span-2 row-span-2 col-start-2 row-start-1">
+      <div className="col-span-4 row-span-2 col-start-2 row-start-1">
         <About />
       </div>
-      <div className="row-span-2 col-start-4 row-start-1">
+      {/* <div className="row-span-2 col-start-4 row-start-1">
         <Ride />
-      </div>
+      </div> */}
     </div>
   );
 }
