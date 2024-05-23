@@ -1,4 +1,3 @@
-import { rideList } from "@/db/rides";
 import React, { useId } from "react";
 
 function RideList() {
@@ -11,8 +10,8 @@ function RideList() {
         <div className="cursor-pointer">Travel</div>
         <div className="cursor-pointer">Offroad</div>
       </div>
-      <div className="flex gap-4 flex-wrap">
-        {rideList.map((obj) => {
+      {/* <div className="flex gap-4 flex-wrap">
+        {[].map((obj) => {
           return (
             <div
               key={mapKey}
@@ -30,7 +29,7 @@ function RideList() {
             </div>
           );
         })}
-      </div>
+      </div> */}
     </>
   );
 }

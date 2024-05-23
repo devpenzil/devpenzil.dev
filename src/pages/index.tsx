@@ -1,7 +1,7 @@
-import Profile from "@/components/Profile";
-import FindMe from "@/components/FindMe";
 import AboutMe from "@/components/AboutMe";
 import Blogs from "@/components/Blogs";
+import FindMe from "@/components/FindMe";
+import Profile from "@/components/Profile";
 
 function Home() {
   return (
@@ -15,9 +15,6 @@ function Home() {
       <div className="container mx-auto flex flex-col lg:flex-row px-4 z-0  ">
         <div className="lg:w-1/2 pt-24">
           <Profile />
-          <div className="mt-6 text-red-800 text-xs">
-            The website is under maintenance. Some information will be incorrect
-          </div>
         </div>
         <div className="lg:w-1/2 py-24 lg:h-screen overflow-scroll ">
           <div className="hidden md:block">
