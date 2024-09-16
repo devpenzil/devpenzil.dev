@@ -7,7 +7,7 @@ function NavBar() {
     { name: "About", link: "/about" },
     { name: "Projects", link: "/about" },
     { name: "Blogs", link: "/about" },
-    { name: "Community Wall", link: "/about" },
+    { name: "Community Wall", link: "/community-wall" },
   ];
   return (
     <div className="container w-2/3 mx-auto py-4 flex flex-row justify-center items-center gap-10 text-base">
