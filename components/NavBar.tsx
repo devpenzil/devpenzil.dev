@@ -5,8 +5,8 @@ function NavBar() {
   const navItem = [
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
-    { name: "Projects", link: "/about" },
-    { name: "Blogs", link: "/about" },
+    { name: "Projects", link: "/projects" },
+    { name: "Blogs", link: "/blogs" },
     { name: "Community Wall", link: "/community-wall" },
   ];
   return (
