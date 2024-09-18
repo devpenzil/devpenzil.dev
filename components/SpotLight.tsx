@@ -20,7 +20,7 @@ function SpotLight() {
         </a>
         <Link href="#">
           <div className="bg-gray-100 py-3 px-8 rounded-full text-slate-800 font-semibold hover:ring-4 hover:ring-slate-800 hover:ring-offset-4 transition duration-150">
-            Read my blogs
+            View my works
           </div>
         </Link>
       </div>
