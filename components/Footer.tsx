@@ -19,7 +19,6 @@ function Footer() {
           <div className=" font-semibold uppercase">Specifics</div>
           <div className="text-slate-500 gap-2 mt-4 font-semibold flex flex-col">
             <Link href={"/"}>Stats</Link>
-            <Link href={"/"}>Community Wall</Link>
             <Link href={"/"}>Toolbox </Link>
             <Link href={"/"}>Snippet</Link>
           </div>

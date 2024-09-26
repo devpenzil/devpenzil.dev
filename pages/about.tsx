@@ -8,7 +8,8 @@ import WorkExperience from "@/components/WorkExperience";
 
 function About() {
   return (
-    <div className="container mx-auto w-2/3 pt-20">
+    <div className="container mx-auto w-2/3 ">
+      <Spacer gap={"h-10"} />
       <PageHeader label="ABOUT ME" heading="Here's my story." />
       <AboutDescription />
       <Spacer gap={"h-20"} />
