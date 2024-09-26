@@ -13,12 +13,12 @@ function SpotLight() {
       </div>
 
       <div className="mt-6 flex flex-row gap-8">
-        <a href="#">
+        <a href="https://calendly.com/devpenzil/intro-call">
           <div className="bg-slate-800 py-3 px-8 rounded-full text-white font-semibold ring-4 ring-slate-800 hover:ring-offset-4 transition duration-150">
             Book a Meeting
           </div>
         </a>
-        <Link href="#">
+        <Link href="/projects">
           <div className="bg-gray-100 py-3 px-8 rounded-full text-slate-800 font-semibold hover:ring-4 hover:ring-slate-800 hover:ring-offset-4 transition duration-150">
             View my works
           </div>
