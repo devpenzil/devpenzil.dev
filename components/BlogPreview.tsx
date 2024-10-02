@@ -1,3 +1,5 @@
+import { blogs } from "@/db/blogs";
+
 function BlogPreview() {
   return (
     <div>
@@ -8,11 +10,11 @@ function BlogPreview() {
         Check out a few of my most recent publishing.
       </div>
       <div className="flex flex-row gap-3 mt-4">
-        {[1, 2, 3].map((obj) => {
+        {blogs.map((obj) => {
           return (
-            <div key={obj} className="w-1/3">
+            <div key={obj.name} className="w-1/3">
               <div className=" h-80 bg-teal-500 rounded-md"></div>
-              <div className="text-2xl  font-semibold">Lorem Ipsum</div>
+              <div className="text-2xl  font-semibold">{obj.name}</div>
             </div>
           );
         })}

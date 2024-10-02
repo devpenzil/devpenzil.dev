@@ -35,7 +35,7 @@ function Toolbox() {
               <div className=" w-32 h-32 bg-gradient-to-r from-slate-100 via-gray-100 to-slate-100 shadow-slate-200 rounded-md flex justify-center items-center group">
                 <img
                   src="/icons/vscode.ico"
-                  className="w-16 h-16 group-hover:mb-3 transitio duration-150"
+                  className="w-16 h-16 group-hover:mb-3 transition duration-150"
                   alt="icon"
                 />
               </div>
