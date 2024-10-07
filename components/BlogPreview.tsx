@@ -16,7 +16,7 @@ function BlogPreview() {
             <a href={obj.link} key={index} className="w-1/3">
               <div className="w-full">
                 <div
-                  className={`h-80 bg-[url('https://images.pexels.com/photos/28350926/pexels-photo-28350926/free-photo-of-a-computer-desk-with-a-monitor-and-keyboard.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] rounded-md`}
+                  className={`h-80 bg-[url('https://images.pexels.com/photos/28350926/pexels-photo-28350926/free-photo-of-a-computer-desk-with-a-monitor-and-keyboard.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover rounded-md`}
                 ></div>
                 <div className="text-2xl  font-semibold">{obj.name}</div>
                 <div className="text-xs text-slate-600  font-semibold">
