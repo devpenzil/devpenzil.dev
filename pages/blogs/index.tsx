@@ -1,5 +1,6 @@
 import PageHeader from "@/components/PageHeader";
 import Spacer from "@/components/Spacer";
+import { blogs } from "@/db/blogs";
 import React from "react";
 
 function Blogs() {
@@ -12,9 +13,9 @@ function Blogs() {
       />
       <Spacer gap="h-20" />
       <div className="grid grid-cols-3 gap-4">
-        {[1, 2, 3, 4, 5, 6, 7].map((obj) => {
+        {blogs.map((obj, index) => {
           return (
-            <div key={obj} className="w-full">
+            <div key={index} className="w-full">
               <div className=" h-80 bg-teal-500 rounded-md"></div>
               <div className="text-2xl  font-semibold">Lorem Ipsum</div>
             </div>
