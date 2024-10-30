@@ -40,7 +40,6 @@ function Footer() {
         </div>
       </div>
       <Spacer gap="h-20" />
-      <div className="text-center text-xs font-semibold">Ajo Alex @ 2024</div>
     </div>
   );
 }
