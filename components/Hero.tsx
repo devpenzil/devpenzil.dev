@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="lg:text-[80px] text-[42px] font-bold leading-[100px]">
           I Plan 📝, Build 🏗️, and Deploy 🚀 mobile Apps
         </div>
-        <a href="#">
+        <a href="https://cal.com/devpenzil/30min">
           <div className="py-4 mt-8 border-4 border-black w-[291px] bg-[#BAE6FF] text-[26px] font-semibold rounded-full text-center">
             Book a Call
           </div>

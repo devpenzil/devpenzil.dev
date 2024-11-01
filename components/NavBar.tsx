@@ -22,9 +22,11 @@ const NavBar = () => {
               🎯 Projects
             </div>
           </a>
-          <div className="px-4 cursor-pointer border-l-[4px] border-black text-[24px] h-[70px] flex justify-center items-center font-semibold">
-            ✍️ Blogs
-          </div>
+          <a href="#blogs">
+            <div className="px-4 cursor-pointer border-l-[4px] border-black text-[24px] h-[70px] flex justify-center items-center font-semibold">
+              ✍️ Blogs
+            </div>
+          </a>
         </div>
       </div>
     </div>
