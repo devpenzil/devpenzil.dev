@@ -3,7 +3,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="container mx-auto py-20 px-10">
+    <div className="container mx-auto py-20 px-10" id="projects">
       <div className="flex flex-row justify-center items-center">
         <div className="text-[80px] font-semibold">My Projects ️</div>
         <img src="/image/StarBoxBlue.svg" alt="" />
