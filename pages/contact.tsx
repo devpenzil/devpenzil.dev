@@ -11,11 +11,13 @@ function Contact() {
           </div>
         </Link>
       </div>
+      <img src="/me.jpg" alt="" className="my-4 w-52 rounded-full" />
       <div className="w-full lg:w-2/3 md:1/2 font-semibold mx-2">
         Feel free to reach out to me if you want me to build an app for you,
         consult you or your company, build an open-source library, or talk about
         bike riding.
       </div>
+
       <div className="mt-10 mx-2">
         <a href="https://x.com/devpenzil">
           <div>Twitter</div>
