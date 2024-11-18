@@ -23,6 +23,9 @@ function Contact() {
         <a href="https://www.linkedin.com/in/devpenzil/">
           <div>Linkedin</div>
         </a>
+        <a href="https://cal.com/devpenzil/15min">
+          <div>Book a call</div>
+        </a>
       </div>
     </div>
   );
