@@ -1,4 +1,5 @@
 import { blogList } from "@/db/blogs";
+import { NavArrowLeft } from "iconoir-react";
 import Head from "next/head";
 import Link from "next/link";
 import React, { FC } from "react";
@@ -13,7 +14,7 @@ const Blogs: FC = () => {
         <div>
           <Link href={"/"}>
             <div className="text-3xl font-semibold mb-8 flex items-center">
-              <img src="/icons/back.svg" alt="" className="w-8 h-8" /> Blogs
+              <NavArrowLeft /> Blogs
             </div>
           </Link>
           {blogList.map((obj, index) => {
@@ -21,7 +22,7 @@ const Blogs: FC = () => {
               <div key={index} className="my-6">
                 <a href={obj.url}>
                   <div>{obj.name}</div>
-                  <div className="text-slate-300 text-xs">
+                  <div className="text-slate-600 text-xs">
                     {obj.time} . {obj.date}
                   </div>
                 </a>

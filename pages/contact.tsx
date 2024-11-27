@@ -1,3 +1,4 @@
+import { Linkedin, NavArrowLeft, Phone } from "iconoir-react";
 import Link from "next/link";
 import React from "react";
 
@@ -7,7 +8,7 @@ function Contact() {
       <div>
         <Link href={"/"}>
           <div className="text-3xl font-semibold mb-8 flex items-center">
-            <img src="/icons/back.svg" alt="" className="w-8 h-8" /> Contact me
+            <NavArrowLeft /> Contact me
           </div>
         </Link>
       </div>
@@ -19,14 +20,15 @@ function Contact() {
       </div>
 
       <div className="mt-10 mx-2">
-        <a href="https://x.com/devpenzil">
-          <div>Twitter</div>
-        </a>
         <a href="https://www.linkedin.com/in/devpenzil/">
-          <div>Linkedin</div>
+          <div className="flex items-center gap-2">
+            <Linkedin width={22} height={22} /> Linkedin
+          </div>
         </a>
         <a href="https://cal.com/devpenzil/15min">
-          <div>Book a call</div>
+          <div className="flex items-center gap-2">
+            <Phone width={22} height={22} /> Book a call
+          </div>
         </a>
       </div>
     </div>

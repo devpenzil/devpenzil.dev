@@ -1,7 +1,7 @@
 import { projectList } from "@/db/projects";
+import { AppStore, GithubCircle, Google, NavArrowLeft } from "iconoir-react";
 import Head from "next/head";
 import Link from "next/link";
-import React from "react";
 
 function Projects() {
   return (
@@ -13,21 +13,37 @@ function Projects() {
         <div>
           <Link href={"/"}>
             <div className="text-3xl font-semibold mb-8 flex items-center">
-              <img src="/icons/back.svg" alt="" className="w-8 h-8" /> Projects
+              <NavArrowLeft /> Projects
             </div>
           </Link>
           <div>
             {projectList.map((obj, index) => {
               return (
-                <>
-                  <a href={obj.url} key={index} target="_blank">
-                    <div className="text-lg">{obj.name}</div>
-                    <div className="text-sm text-slate-300 font-semibold">
-                      {obj.desc}
-                    </div>
-                  </a>
+                <div key={index}>
+                  <div className="text-lg">{obj.name}</div>
+                  <div className="text-sm font-semibold">{obj.desc}</div>
+                  <div className="flex gap-3 mt-2">
+                    {obj.appStore && (
+                      <a href={obj.appStore}>
+                        <AppStore width={20} height={20} />
+                      </a>
+                    )}
+
+                    {obj.playStore && (
+                      <a href={obj.playStore}>
+                        <Google width={20} height={20} />
+                      </a>
+                    )}
+
+                    {obj.github && (
+                      <a href={obj.github}>
+                        <GithubCircle width={20} height={20} />
+                      </a>
+                    )}
+                  </div>
+                  <hr className="mt-3" />
                   <div className="h-3" />
-                </>
+                </div>
               );
             })}
           </div>
