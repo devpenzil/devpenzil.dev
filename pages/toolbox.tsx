@@ -21,7 +21,7 @@ function Toolbox() {
           {software.map((obj) => {
             return (
               <a href={obj.url} key={obj.name}>
-                <div className=" w-32 h-32 bg-gradient-to-r from-slate-100 via-gray-100 to-slate-100 shadow-slate-200 rounded-md flex justify-center items-center group">
+                <div className=" w-32 h-32 bg-linear-to-r from-slate-100 via-gray-100 to-slate-100 shadow-slate-200 rounded-md flex justify-center items-center group">
                   <img
                     src={`/ico/${obj.image}`}
                     className="w-16 h-16 group-hover:mb-3 transitio duration-150"

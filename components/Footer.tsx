@@ -1,61 +1,36 @@
-import React from "react";
+/* eslint-disable @next/next/no-img-element */
 import Spacer from "./Spacer";
-import Link from "next/link";
 
 function Footer() {
   return (
     <>
       <Spacer gap="h-20" />
       <hr />
-      <footer className="footer text-base-content p-10">
-        <aside>
-          <div className="avatar placeholder">
-            <div className="bg-neutral text-neutral-content w-8 rounded-full">
-              <span className="text-xs">UI</span>
-            </div>
+      <footer className="footer footer-horizontal footer-center  text-base-content rounded p-10">
+        <nav>
+          <div className="grid grid-flow-col gap-4">
+            <a href="https://github.com/devpenzil/">
+              <img src="/icons/github.svg" alt="" />
+            </a>
+            <a href="https://x.com/devpenzil">
+              <img src="/icons/x.svg" alt="" />
+            </a>
+            <a href="https://www.linkedin.com/in/devpenzil/">
+              <img src="/icons/linkedin.svg" alt="" />
+            </a>
+            <a href="https://medium.com/@devpenzil">
+              <img src="/icons/medium.svg" alt="" />
+            </a>
+            <a href="https://www.instagram.com/adv.fox/">
+              <img src="/icons/instagram.svg" alt="" />
+            </a>
           </div>
+        </nav>
+        <aside>
           <p>
-            Developed by Ajo Alex
-            <br />
-            Built with Next, Tailwind and Supabase
+            Developed by Ajo Alex. <br /> Built with Next, Tailwind and Supabase
           </p>
         </aside>
-        <nav>
-          <h6 className="footer-title">General</h6>
-          <a className="link link-hover">
-            <Link href={"/"}>Home</Link>
-          </a>
-          <a className="link link-hover">
-            <Link href={"/about"}>About</Link>
-          </a>
-          <a className="link link-hover">
-            <Link href={"/projects"}>Project </Link>
-          </a>
-          <a className="link link-hover">
-            <Link href={"/blogs"}>Blog</Link>
-          </a>
-        </nav>
-        <nav>
-          <h6 className="footer-title">Specifics</h6>
-          <a className="link link-hover">
-            <Link href={"/stats"}>Stats</Link>
-          </a>
-          <a className="link link-hover">
-            <Link href={"/"}>Toolbox </Link>
-          </a>
-        </nav>
-        <nav>
-          <h6 className="footer-title">Extra</h6>
-          <a className="link link-hover">
-            <Link href={"/resume"}>Resume</Link>
-          </a>
-          <a
-            className="link link-hover"
-            href="https://github.com/sponsors/devpenzil"
-          >
-            Sponsor
-          </a>
-        </nav>
       </footer>
     </>
   );
