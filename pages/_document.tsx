@@ -1,21 +1,10 @@
-import { Html, Head, Main, NextScript } from "next/document";
-import { useEffect, useState } from "react";
+import { Head, Html, Main, NextScript } from "next/document";
 
 export default function Document() {
-  const [theme, setTheme] = useState<"light" | "sunset">("light");
-
-  useEffect(() => {
-    if (localStorage.getItem("theme") === "sunset") {
-      setTheme("sunset");
-    } else {
-      setTheme("light");
-    }
-  }, []);
-
   return (
     <Html lang="en">
       <Head />
-      <body className="antialiased" data-theme={theme}>
+      <body className="antialiased" data-theme="light">
         <Main />
         <NextScript />
       </body>

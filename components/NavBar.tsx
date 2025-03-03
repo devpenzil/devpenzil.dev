@@ -5,7 +5,7 @@ import React from "react";
 function NavBar() {
   return (
     <div className="container w-2/3 mx-auto">
-      <div className="navbar bg-base-100 my-6">
+      <div className="navbar bg-base-100 py-6">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -29,9 +29,9 @@ function NavBar() {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <Link href="/about">About</Link>
-              <Link href="/projects">Projects</Link>
-              <Link href="/blogs">Blogs</Link>
+              <Link href="/about">Who am I ?</Link>
+              <Link href="/projects">What I built ?</Link>
+              <Link href="/blogs">What I write ?</Link>
             </ul>
           </div>
           <div className="avatar">
@@ -44,9 +44,9 @@ function NavBar() {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-8 text-xl">
-            <Link href="/about">About</Link>
-            <Link href="/projects">Projects</Link>
-            <Link href="/blogs">Blogs</Link>
+            <Link href="/about">Who am I ?</Link>
+            <Link href="/projects">What I built ?</Link>
+            <Link href="/blogs">What I write?</Link>
           </ul>
         </div>
         <div className="navbar-end">

@@ -5,22 +5,28 @@ import GearsAndSkills from "@/components/GearsAndSkills";
 import PageHeader from "@/components/PageHeader";
 import Spacer from "@/components/Spacer";
 import WorkExperience from "@/components/WorkExperience";
+import Head from "next/head";
 
 function About() {
   return (
-    <div className="container mx-auto w-2/3 ">
-      <Spacer gap={"h-10"} />
-      <PageHeader label="ABOUT ME" heading="Here's my story." />
-      <AboutDescription />
-      <Spacer gap={"h-20"} />
-      <WorkExperience />
-      <Spacer gap={"h-20"} />
-      <BlogPreview />
-      <Spacer gap={"h-20"} />
-      <GearsAndSkills />
-      <Spacer gap={"h-20"} />
-      <Footer />
-    </div>
+    <>
+      <Head>
+        <title>Ajo Alex | Mobile App Engineer | About</title>
+      </Head>
+      <div className="container mx-auto w-2/3 ">
+        <Spacer gap={"h-10"} />
+        <PageHeader label="ABOUT ME" heading="Here's my story." />
+        <AboutDescription />
+        <Spacer gap={"h-20"} />
+        <WorkExperience />
+        <Spacer gap={"h-20"} />
+        <BlogPreview />
+        <Spacer gap={"h-20"} />
+        <GearsAndSkills />
+        <Spacer gap={"h-20"} />
+        <Footer />
+      </div>
+    </>
   );
 }
 
