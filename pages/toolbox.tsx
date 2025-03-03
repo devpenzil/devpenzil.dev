@@ -28,22 +28,7 @@ function Toolbox() {
         })}
       </div>
       <Spacer gap="h-20" />
-      <div className="text-2xl font-semibold mb-2">Tech Stack</div>
-      <div className="flex flex-row gap-4 flex-wrap">
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((obj) => {
-          return (
-            <a href="#" key={obj}>
-              <div className=" w-32 h-32 bg-gradient-to-r from-slate-100 via-gray-100 to-slate-100 shadow-slate-200 rounded-md flex justify-center items-center group">
-                <img
-                  src="/icons/vscode.ico"
-                  className="w-16 h-16 group-hover:mb-3 transition duration-150"
-                  alt="icon"
-                />
-              </div>
-            </a>
-          );
-        })}
-      </div>
+
       <Footer />
     </div>
   );

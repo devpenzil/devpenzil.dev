@@ -14,7 +14,7 @@ function BlogPreview() {
       });
   }, []);
   return (
-    <div>
+    <div className="py-10">
       <div className="text-3xl font-semibold">
         I love to share my knowledge through writing.
       </div>

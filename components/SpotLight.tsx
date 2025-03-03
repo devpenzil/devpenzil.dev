@@ -3,7 +3,7 @@ import React from "react";
 
 function SpotLight() {
   return (
-    <div className=" pb-20 ">
+    <div className=" py-20 ">
       <div className="flex justify-between">
         <div className="md:text-8xl text-4xl font-bold md:leading-[120px]">
           I&apos;m Ajo. <br /> I <span className="text-green-500">Plan</span>,

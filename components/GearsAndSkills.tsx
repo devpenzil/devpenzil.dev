@@ -3,7 +3,7 @@ import React from "react";
 
 function GearsAndSkills() {
   return (
-    <div className="grid grid-cols-2 min-h-[500px]">
+    <div className="grid grid-cols-2 min-h-[300px]">
       <div className="flex flex-col justify-center pr-8">
         <div className="text-3xl font-semibold mb-2">
           Interested in my gear?
@@ -21,7 +21,7 @@ function GearsAndSkills() {
           </Link>
         </div>
       </div>
-      <div className="bg-[url('https://images.pexels.com/photos/28350926/pexels-photo-28350926/free-photo-of-a-computer-desk-with-a-monitor-and-keyboard.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] rounded-md bg-cover bg-center" />
+      <div className="bg-[url('https://images.pexels.com/photos/28350926/pexels-photo-28350926/free-photo-of-a-computer-desk-with-a-monitor-and-keyboard.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] rounded-md bg-cover bg-center " />
     </div>
   );
 }

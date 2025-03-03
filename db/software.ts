@@ -7,16 +7,6 @@ export const software: softwareListType = [
     image: "vscode.ico",
   },
   {
-    url: "https://www.notion.so/",
-    name: "Notion",
-    image: "notion.ico",
-  },
-  {
-    url: "https://brave.com/",
-    name: "Brave",
-    image: "brave.ico",
-  },
-  {
     url: "https://developer.android.com/studio",
     name: "Android Studio",
     image: "android-studio.ico",
@@ -27,14 +17,9 @@ export const software: softwareListType = [
     image: "xcode.ico",
   },
   {
-    url: "https://www.jetbrains.com/pycharm/",
-    name: "Pycharm",
-    image: "pycharm.ico",
-  },
-  {
-    url: "https://hoppscotch.com/",
-    name: "Hoppscotch",
-    image: "hoppscotch.ico",
+    url: "https://www.notion.so/",
+    name: "Notion",
+    image: "notion.ico",
   },
   {
     url: "https://music.youtube.com/",
@@ -50,11 +35,6 @@ export const software: softwareListType = [
     url: "https://fig.io/download",
     name: "Fig",
     image: "fig.ico",
-  },
-  {
-    url: "https://slack.com/intl/en-in/",
-    name: "Slack",
-    image: "slack.ico",
   },
   {
     url: "https://github.com/apps/desktop",
