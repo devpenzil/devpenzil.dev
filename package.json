@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-spring/web": "^9.7.5",
     "@tailwindcss/typography": "^0.5.16",
     "axios": "^1.7.9",
     "next": "^15.2.1-canary.5",
