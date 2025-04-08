@@ -31,9 +31,10 @@ function NavBar() {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow-sm"
             >
-              <Link href="/about">Who am I ?</Link>
-              <Link href="/projects">What I built ?</Link>
-              <Link href="/blogs">What I write ?</Link>
+              <Link href="/">Home</Link>
+              <Link href="/about">About</Link>
+              <Link href="/projects">Projects</Link>
+              <Link href="/blogs">Blogs</Link>
             </ul>
           </div>
           <div className="avatar">
@@ -46,9 +47,10 @@ function NavBar() {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-8 text-xl">
-            <Link href="/about">Who am I ?</Link>
-            <Link href="/projects">What I built ?</Link>
-            <Link href="/blogs">What I write?</Link>
+            <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/projects">Projects</Link>
+            <Link href="/blogs">Blogs</Link>
           </ul>
         </div>
         <div className="navbar-end">

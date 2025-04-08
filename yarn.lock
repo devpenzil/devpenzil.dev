@@ -1429,6 +1429,11 @@ graphemer@^1.4.0:
   resolved "https://registry.npmjs.org/graphemer/-/graphemer-1.4.0.tgz"
   integrity sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==
 
+gsap@^3.12.7:
+  version "3.12.7"
+  resolved "https://registry.npmjs.org/gsap/-/gsap-3.12.7.tgz"
+  integrity sha512-V4GsyVamhmKefvcAKaoy0h6si0xX7ogwBoBSs2CTJwt7luW0oZzC0LhdkyuKV8PJAXr7Yaj8pMjCKD4GJ+eEMg==
+
 has-bigints@^1.0.1, has-bigints@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/has-bigints/-/has-bigints-1.0.2.tgz"
